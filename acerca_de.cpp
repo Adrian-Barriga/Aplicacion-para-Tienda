@@ -6,7 +6,7 @@ acerca_de::acerca_de(QWidget *parent) :
     ui(new Ui::acerca_de)
 {
     ui->setupUi(this);
-    m_version = "v 0.0";
+    m_version = "v 0.1";
     m_valor = 7; // Se puede ingresar cualquier valor
 }
 

@@ -47,7 +47,6 @@ private slots:
 
     void on_btnFacturar_clicked();
 
-
 private:
     Ui::Tienda *ui;
     QList<Producto*> m_productos;

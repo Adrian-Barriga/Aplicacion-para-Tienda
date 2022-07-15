@@ -394,7 +394,7 @@ background-color: rgb(170, 85, 0);</string>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionGuadar">
    <property name="icon">
-    <iconset resource="Recursos/Img/Recursos.qrc">
+    <iconset>
      <normaloff>:/new/prefix1/disquete.png</normaloff>:/new/prefix1/disquete.png</iconset>
    </property>
    <property name="text">
@@ -403,7 +403,7 @@ background-color: rgb(170, 85, 0);</string>
   </action>
   <action name="actionAbrir">
    <property name="icon">
-    <iconset resource="Recursos/Img/Recursos.qrc">
+    <iconset>
      <normaloff>:/new/prefix1/carpeta.png</normaloff>:/new/prefix1/carpeta.png</iconset>
    </property>
    <property name="text">
@@ -412,7 +412,7 @@ background-color: rgb(170, 85, 0);</string>
   </action>
   <action name="actionNuevo">
    <property name="icon">
-    <iconset resource="Recursos/Img/Recursos.qrc">
+    <iconset>
      <normaloff>:/new/prefix1/agregar-archivo.png</normaloff>:/new/prefix1/agregar-archivo.png</iconset>
    </property>
    <property name="text">
@@ -426,11 +426,11 @@ background-color: rgb(170, 85, 0);</string>
   </action>
   <action name="actionAcerca_de">
    <property name="icon">
-    <iconset resource="Recursos/Img/Recursos.qrc">
+    <iconset>
      <normaloff>:/new/prefix1/acerca-de.png</normaloff>:/new/prefix1/acerca-de.png</iconset>
    </property>
    <property name="text">
-    <string>Acerca de</string>
+    <string>Acerca de la Aplicación</string>
    </property>
   </action>
  </widget>
