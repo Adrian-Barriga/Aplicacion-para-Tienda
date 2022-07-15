@@ -7,6 +7,7 @@ class Cliente : public QObject
 {
     Q_OBJECT
 private:
+    //Procedemos a declarar las variables que urilizaremos para guardar la informacion
     QString m_nombre;
     QString m_email;
     QString m_direccion;

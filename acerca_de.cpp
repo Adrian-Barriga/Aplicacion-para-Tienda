@@ -7,7 +7,7 @@ acerca_de::acerca_de(QWidget *parent) :
 {
     ui->setupUi(this);
     m_version = "v 0.0";
-    m_valor = 7; // Valor random xd
+    m_valor = 7; // Se puede ingresar cualquier valor
 }
 
 acerca_de::~acerca_de()
@@ -18,7 +18,6 @@ acerca_de::~acerca_de()
 void acerca_de::setVersion(const QString &newVersion)
 {
     m_version = newVersion;
-    //ui->outVersion->setText("v" + m_version);
 }
 
 int acerca_de::valor() const

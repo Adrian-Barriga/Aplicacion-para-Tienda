@@ -13,6 +13,9 @@
 #include "acerca_de.h"
 #include "factura.h"
 
+/*Definimos valores constantes
+ * que nos servirar en cualquier caso dentro de la App*/
+
 #define IVA 0.12
 #define VERSION "0.1"
 #define TIENDA "Mi tienda"
@@ -31,18 +34,12 @@ public:
     Tienda(QWidget *parent = nullptr);
     ~Tienda();
 
-//    int getColumnas() const;
-//    int getFilas() const;
-
-
 private slots:
     void on_inProducto_currentIndexChanged(int index);
 
     void on_btnAgregar_released();
 
     void on_actionGuadar_triggered();
-
-//    void on_actionAbrir_triggered();
 
     void on_actionNuevo_triggered();
 
@@ -53,7 +50,6 @@ private slots:
 
 private:
     Ui::Tienda *ui;
-//    QStandardItemModel *mModel;
     QList<Producto*> m_productos;
     void cargarProductos();
     float m_subtotal;

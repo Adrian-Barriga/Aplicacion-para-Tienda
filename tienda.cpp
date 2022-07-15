@@ -18,21 +18,13 @@ Tienda::Tienda(QWidget *parent)
     ui->outDetalle->setHorizontalHeaderLabels(cabecera);
     // Establecer el subtotal a 0
     m_subtotal = 0;
-
-
-    //    mModel = new QStandardItemModel(this);
-    //    ui->outDetalle->setModel(mModel);
-    //    setCentralWidget(ui->outDetalle);
-    //    setWindowTitle("Du CSV Viewer");
 }
 
 Tienda::~Tienda()
 {
     delete ui;
 }
-/**
- * @brief Tienda::cargarProductos Carga la lista de productos de la tienda
- */
+
 void Tienda::cargarProductos()
 {
 
@@ -77,16 +69,6 @@ void Tienda::calcular(float stProducto)
     ui->outIva->setText("$ " + QString::number(iva, 'f', 2));
     ui->outTotal->setText("$ " + QString::number(total, 'f', 2));
 }
-
-//void Tienda::setValueAt(int ix, int jx, const QString &value)
-//{
-//    if(!mModel->item(ix, jx)){
-//        mModel->setItem(ix, jx, new QStandardItem(value));
-//    }else{
-//        mModel->item(ix, jx)->setText(value);
-//    }
-//}
-
 
 void Tienda::on_inProducto_currentIndexChanged(int index)
 {
@@ -165,36 +147,6 @@ void Tienda::on_actionGuadar_triggered()
     archivo.close();
 }
 
-
-//void Tienda::on_actionAbrir_triggered()
-//{
-//    auto nombreArchivo = QFileDialog::getOpenFileName(this,"Abrir",QDir::rootPath(), "Archivos csv (*.csv)");
-//    if (nombreArchivo.isEmpty()){
-//        return;
-//    }
-
-//    QFile archivo(nombreArchivo);
-//    if (!archivo.open(QIODevice::ReadOnly | QIODevice::Text)){
-//        return;
-//    }
-
-//    QTextStream salida(&archivo);
-//    int filascCount = 0;
-//    while(!salida.atEnd()){
-//        mModel->setRowCount(filascCount);
-//        auto line = salida.readLine();
-//        auto valor = line.split(";");
-//        const int columCount = valor.size();
-//        mModel->setColumnCount(columCount);
-//        for(int j = 0; j < columCount; j++){
-//            setValueAt(filascCount, j, valor.at(j));
-//        }
-//        ++ filascCount;
-//    }
-//    archivo.close();
-//}
-
-
 void Tienda::on_actionNuevo_triggered()
 {
 
@@ -225,6 +177,4 @@ void Tienda::on_btnFacturar_clicked()
         dialog->setTienda(TIENDA);
         dialog->exec();
     }
-
 }
-
